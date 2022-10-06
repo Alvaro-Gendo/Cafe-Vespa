@@ -10,14 +10,14 @@
         {
             "nombreProducto": "brownie",
             "precio": 200,
-            "categoria": "bebida caliente",
+            "categoria": "dulce",
             "imagen": "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1600",
             "id": 2
         },
         {
             "nombreProducto": "licuado",
             "precio": 400,
-            "categoria": "bebida caliente",
+            "categoria": "bebida fria",
             "imagen": "https://images.pexels.com/photos/990439/pexels-photo-990439.jpeg?auto=compress&cs=tinysrgb&w=1600",
             "id": 3
         }

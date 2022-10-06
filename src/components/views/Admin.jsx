@@ -1,7 +1,29 @@
+import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
+import { consultaAPI } from "../helpers/queires";
 import ItemProducto from "./producto/ItemProducto";
 
+
 const Admin = () => {
+    const [producto, setProducto] = useState([])
+
+    useEffect(()=>{
+        //opcion 1
+        consultaAPI().then((respuesta)=>{
+            console.log(respuesta)
+            setProducto(respuesta)
+        }) 
+
+        //opcion 2
+        // const consultaPrueba = async() =>{
+        //     const prueba = await consultaAPI()
+        //     console.log(prueba)
+        // }
+        // consultaPrueba();
+
+
+    },[])
+
     return (
         <Container className="mt-5">
             <div className="d-flex justify-content-between">
@@ -21,12 +43,9 @@ const Admin = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <ItemProducto></ItemProducto>
+                    {
+                        producto.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+                    }
                 </tbody>
             </Table>
         </Container>
