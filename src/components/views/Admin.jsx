@@ -1,4 +1,5 @@
 import { Button, Container, Table } from "react-bootstrap";
+import ItemProducto from "./producto/ItemProducto";
 
 const Admin = () => {
     return (
@@ -25,10 +26,7 @@ const Admin = () => {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        <Button variant="warning" className="m-1">Editar</Button>
-                        <Button variant="danger" className="m-1 text-black">Borrar</Button>
-                    </td>
+                    <ItemProducto></ItemProducto>
                 </tbody>
             </Table>
         </Container>
