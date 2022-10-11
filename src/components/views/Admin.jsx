@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 import { consultaAPI } from "../helpers/queires";
 import ItemProducto from "./producto/ItemProducto";
+import {Link} from "react-router-dom"
 
 
 const Admin = () => {
@@ -28,7 +29,7 @@ const Admin = () => {
         <Container className="mt-5">
             <div className="d-flex justify-content-between">
             <h1>Productos disponibles</h1>
-             <Button>Agregar</Button>   
+             <Link className="btn btn-outline-primary" to="/administrar/crear">Agregar</Link>   
             </div>
             <hr />
             <Table striped bordered hover>
