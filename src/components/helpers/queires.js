@@ -21,16 +21,14 @@ export const consultaAPI = async () => {
 
 export const crearProductoAPI = async (producto) => {
   try {
-    const respuesta = await fetch(URL,{
+    const respuesta = await fetch(URL, {
       method: "POST",
-      headers:{
-        "Content-Type": "application/json"
+      headers: {
+        "Content-Type": "application/json",
       },
-      body:JSON.stringify(producto)
+      body: JSON.stringify(producto),
     });
-    const listaProductos = await respuesta.json();
-    //console.log(listaProductos)
-    return listaProductos;
+    return respuesta;
   } catch (error) {
     console.log(error);
   }

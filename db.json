@@ -1,25 +1,53 @@
 {
-    "productos": [
-        {
-            "nombreProducto": "café",
-            "precio": 300,
-            "categoria": "bebida caliente",
-            "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "id": 1
-        },
-        {
-            "nombreProducto": "brownie",
-            "precio": 200,
-            "categoria": "dulce",
-            "imagen": "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "id": 2
-        },
-        {
-            "nombreProducto": "licuado",
-            "precio": 400,
-            "categoria": "bebida fria",
-            "imagen": "https://images.pexels.com/photos/990439/pexels-photo-990439.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "id": 3
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "café",
+      "precio": 300,
+      "categoria": "bebida caliente",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 1
+    },
+    {
+      "nombreProducto": "brownie",
+      "precio": 200,
+      "categoria": "dulce",
+      "imagen": "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 2
+    },
+    {
+      "nombreProducto": "licuado",
+      "precio": 400,
+      "categoria": "bebida fria",
+      "imagen": "https://images.pexels.com/photos/990439/pexels-photo-990439.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 3
+    },
+    {
+      "nombreProducto": "café de prueba",
+      "precio": 300,
+      "categoria": "bebida caliente",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Pan",
+      "precio": "50",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "3",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Factura",
+      "precio": "50",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "3",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Torta",
+      "precio": "200",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "3",
+      "id": 8
+    }
+  ]
 }
