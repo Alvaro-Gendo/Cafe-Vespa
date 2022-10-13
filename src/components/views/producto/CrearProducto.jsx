@@ -113,10 +113,10 @@ const CrearProducto = () => {
             required:"Debe seleccionar una categoria"
           })}>
             <option value="">Selecione una opcion</option>
-            <option value="1">Bebida Caliente</option>
-            <option value="2">Bebida fria</option>
-            <option value="3">Dulce</option>
-            <option value="3">Salado</option>
+            <option value="Bebida Caliente">Bebida Caliente</option>
+            <option value="Bebida fria">Bebida fria</option>
+            <option value="Dulce">Dulce</option>
+            <option value="Salado">Salado</option>
           </Form.Select>
           <Form.Text className="text-danger">
             {errors.categoria?.message}

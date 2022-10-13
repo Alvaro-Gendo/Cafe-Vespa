@@ -29,18 +29,11 @@
       "id": 4
     },
     {
-      "nombreProducto": "Factura",
-      "precio": "50",
+      "nombreProducto": "Miel",
+      "precio": "211",
       "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
-      "categoria": "3",
-      "id": 7
-    },
-    {
-      "nombreProducto": "Torta",
-      "precio": "200",
-      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
-      "categoria": "3",
-      "id": 8
+      "categoria": "Dulce",
+      "id": 5
     }
   ]
 }
