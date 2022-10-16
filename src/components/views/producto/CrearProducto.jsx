@@ -28,7 +28,7 @@ const CrearProducto = () => {
     crearProductoAPI(datos).then((respuesta)=>{
       if(respuesta.status === 201){
         //el producto se creo
-        Swal.fire("Producto creado", "El producto fue creado correcta mente", "success")
+        Swal.fire("Producto creado", "El producto fue creado correctamente", "success")
         reset();
         //redireccionar 
         navegacion("/administrador")

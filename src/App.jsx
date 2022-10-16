@@ -9,6 +9,8 @@ import DetalleProducto from "./components/views/DetalleProducto";
 import CrearProducto from "./components/views/producto/CrearProducto";
 import EditarProducto from "./components/views/producto/EditarProducto";
 import "./style.css"
+import Login from "./components/views/Login";
+import Registro from "./components/views/Registro";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route exact path="/administrar/crear" element={<CrearProducto></CrearProducto>}/>
         <Route exact path="/administrar/editar/:id" element={<EditarProducto></EditarProducto>}/>
         <Route exact path="/detalle-producto" element={<DetalleProducto/>}/>
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/registro" element={<Registro/>} />
         <Route path="*" element={<Error404></Error404>}/>
       </Routes>
       <Footer></Footer>
