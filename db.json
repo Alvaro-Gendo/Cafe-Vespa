@@ -34,6 +34,41 @@
       "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
       "categoria": "Dulce",
       "id": 5
+    },
+    {
+      "nombreProducto": "café de prueba",
+      "precio": 300,
+      "categoria": "bebida caliente",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 6
+    },
+    {
+      "nombreProducto": "café de prueba",
+      "precio": 300,
+      "categoria": "bebida caliente",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 7
+    }
+  ],
+  "usuario": [
+    {
+      "nombrUsuario": "Alvaro Ruiz",
+      "email": "ejemplo@hotmail.com",
+      "calve": "Clave1234",
+      "id": 1
+    },
+    {
+      "nombrUsuario": "Segundo admin",
+      "email": "ejemplo@hotmail.com",
+      "calve": "Clave1234",
+      "id": 2
+    },
+    {
+      "nombreApellido": "Tercer Admin",
+      "email": "Admin3@hotmail.com",
+      "clave": "Admin12345",
+      "clave2": "Admin12345",
+      "id": 3
     }
   ]
 }

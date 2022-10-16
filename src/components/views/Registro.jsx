@@ -1,12 +1,15 @@
 import React from "react";
 import { Button, Card, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { crearAdminAPI } from "../helpers/queires";
 
 const Registro = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm({
     defaultValues: {
       nombreApellido: "",
@@ -16,7 +19,16 @@ const Registro = () => {
     },
   });
 
-  const onSubmit = (datos) => {};
+  const onSubmit = (usuario) => {
+    crearAdminAPI(usuario).then((respuesta)=>{
+        if(respuesta.status === 201){
+            Swal.fire("Usuario creado", "El usuario fue creado correctamente", "success")
+            reset();
+        }else{
+            Swal.fire("Ocurrio un error", "Vuelve a intentar", "error")
+        }
+    })
+  };
 
   return (
     <Container className="mt-5">
@@ -24,7 +36,7 @@ const Registro = () => {
         <Card.Header as="h4">Registro</Card.Header>
         <Card.Body>
           <Form onSubmit={handleSubmit(onSubmit)}>
-            <Form.Group>
+            <Form.Group controlId="formNombreApellido">
               <Form.Label>Nombre y apellido</Form.Label>
               <Form.Control
                 type="text"
@@ -45,7 +57,7 @@ const Registro = () => {
                 {errors.nombreApellido?.message}
               </Form.Text>
             </Form.Group>
-            <Form.Group>
+            <Form.Group controlId="formEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="text"
@@ -62,7 +74,7 @@ const Registro = () => {
                   },
                   pattern: {
                     value:
-                      /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
+                      /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/,
                     message: "Email invalido",
                   },
                 })}
@@ -71,7 +83,7 @@ const Registro = () => {
                 {errors.email?.message}
               </Form.Text>
             </Form.Group>
-            <Form.Group>
+            <Form.Group controlId="formClave">
               <Form.Label>Contraseña</Form.Label>
               <Form.Control
                 type="password"
@@ -96,7 +108,7 @@ const Registro = () => {
                 {errors.clave?.message}
               </Form.Text>
             </Form.Group>
-            <Form.Group>
+            <Form.Group controlId="formClave">
               <Form.Label>Confirmar contraseña</Form.Label>
               <Form.Control
                 type="password"

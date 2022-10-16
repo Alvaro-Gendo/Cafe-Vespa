@@ -22,7 +22,7 @@ const Login = () => {
         <Card.Header as="h4">Login</Card.Header>
         <Card.Body>
           <Form onSubmit={handleSubmit(onSubmit)}>
-            <Form.Group>
+            <Form.Group controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
@@ -48,7 +48,7 @@ const Login = () => {
                 {errors.login?.message}
               </Form.Text>
             </Form.Group>
-            <Form.Group>
+            <Form.Group controlId="formBasicPassword">
               <Form.Label>Contraseña</Form.Label>
               <Form.Control
                 type="password"
