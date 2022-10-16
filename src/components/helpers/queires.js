@@ -44,3 +44,16 @@ export const borrarProductoAPI = async (id) => {
     console.log(error);
   }
 };
+
+export const obtenerProductoAPI = async (id) => {
+  try {
+    const respuesta = await fetch(URL + "/" + id);
+
+    const productoBuscado = await respuesta.json();
+
+    return productoBuscado;
+
+  } catch (error) {
+    console.log(error);
+  }
+};
