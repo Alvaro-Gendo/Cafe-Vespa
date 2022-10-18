@@ -1,12 +1,19 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Container, Form } from "react-bootstrap";
+import { useParams, useNavigate } from "react-router-dom";
+import { editarProductoAPI, obtenerProductoAPI } from "../../helpers/queires";
+import Swal from "sweetalert2";
 
 const EditarProducto = () => {
+  //traer el parametro de la ruta
+  const {id} = useParams();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue
   } = useForm({
     defaultValues: {
       nombreProducto: "",
@@ -15,10 +22,40 @@ const EditarProducto = () => {
       categoria: "",
     },
   });
+  const navegacion = useNavigate();
 
-  const onSubmit = (datos) => {};
+  const onSubmit = (datos) => {
+    //guarda en el parametro(datos) las cosas de los input del formulario
+    // console.log(datos)
+    //aqui enviar la peticion a la api para actualizar los datos del producto
+    editarProductoAPI(id, datos).then((datos) =>{
+      if(datos.status === 200){
+        Swal.fire("Producto actualizado", "Good", "success")
+        //redireccionar a admin
+        navegacion("/administrador")
+      }else{
+        Swal.fire("Ocurrio un error", "Intente mas tarde", "error")
+      }
+    })
+  };
 
-  useEffect(() => {});
+  useEffect(() => {
+    //destro del parametro respuesta viene lo que devuelve la peticion(en esta caso obtenerProductoAPI)
+    obtenerProductoAPI(id).then((respuesta) =>{
+      if(respuesta.status === 200){
+        //cargar los datos de la respuesta en el formulario
+        setValue("nombreProducto", respuesta.dato.nombreProducto)
+        setValue("precio", respuesta.dato.precio)
+        setValue("imagen", respuesta.dato.imagen)
+        setValue("categoria", respuesta.dato.categoria)
+        console.log(respuesta)
+      }else{
+        Swal.fire("Ocurrio un error", "Intente mas tarde", "error")
+      }
+      
+    })
+  },[]);
+
   return (
     <Container className="mt-3">
       <h1>Editar Producto</h1>
@@ -92,7 +129,7 @@ const EditarProducto = () => {
           >
             <option>Selecione una opcion</option>
             <option value="Bebida Caliente">Bebida Caliente</option>
-            <option value="Bebida Fria">Bebida Fria</option>
+            <option value="Bebida fria">Bebida Fria</option>
             <option value="Dulce">Dulce</option>
             <option value="Salado">Salado</option>
           </Form.Select>

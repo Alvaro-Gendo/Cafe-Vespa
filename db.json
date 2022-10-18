@@ -1,52 +1,52 @@
 {
   "productos": [
     {
-      "nombreProducto": "café",
-      "precio": 300,
-      "categoria": "bebida caliente",
+      "nombreProducto": "café actuzalizado",
+      "precio": "250",
       "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "Bebida Caliente",
       "id": 1
     },
     {
       "nombreProducto": "brownie",
       "precio": 200,
-      "categoria": "dulce",
       "imagen": "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "categoria": "Dulce",
       "id": 2
     },
     {
-      "nombreProducto": "licuado",
-      "precio": 400,
-      "categoria": "bebida fria",
-      "imagen": "https://images.pexels.com/photos/990439/pexels-photo-990439.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "nombreProducto": "Tostada",
+      "precio": "200",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "Salado",
       "id": 3
     },
     {
-      "nombreProducto": "café de prueba",
-      "precio": 300,
-      "categoria": "bebida caliente",
-      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "nombreProducto": "Licuado",
+      "precio": "250",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "Bebida fria",
       "id": 4
     },
     {
-      "nombreProducto": "Miel",
-      "precio": "211",
+      "nombreProducto": "Te",
+      "precio": "50",
       "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
-      "categoria": "Dulce",
+      "categoria": "Bebida Caliente",
       "id": 5
     },
     {
-      "nombreProducto": "café de prueba",
-      "precio": 300,
-      "categoria": "bebida caliente",
-      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "nombreProducto": "Factura",
+      "precio": "150",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "Dulce",
       "id": 6
     },
     {
-      "nombreProducto": "café de prueba",
-      "precio": 300,
-      "categoria": "bebida caliente",
-      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "nombreProducto": "Jugo",
+      "precio": "250",
+      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "categoria": "Bebida fria",
       "id": 7
     }
   ],

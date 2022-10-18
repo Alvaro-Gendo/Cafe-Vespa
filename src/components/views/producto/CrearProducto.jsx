@@ -112,7 +112,7 @@ const CrearProducto = () => {
           <Form.Select {...register("categoria",{
             required:"Debe seleccionar una categoria"
           })}>
-            <option value="">Selecione una opcion</option>
+            <option>Selecione una opcion</option>
             <option value="Bebida Caliente">Bebida Caliente</option>
             <option value="Bebida fria">Bebida fria</option>
             <option value="Dulce">Dulce</option>
