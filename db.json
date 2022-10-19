@@ -10,44 +10,37 @@
     {
       "nombreProducto": "brownie",
       "precio": 200,
-      "imagen": "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "categoria": "Dulce",
       "id": 2
     },
     {
       "nombreProducto": "Tostada",
       "precio": "200",
-      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "categoria": "Salado",
       "id": 3
     },
     {
       "nombreProducto": "Licuado",
       "precio": "250",
-      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "categoria": "Bebida fria",
       "id": 4
     },
     {
       "nombreProducto": "Te",
       "precio": "50",
-      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "categoria": "Bebida Caliente",
       "id": 5
     },
     {
       "nombreProducto": "Factura",
       "precio": "150",
-      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "categoria": "Dulce",
       "id": 6
-    },
-    {
-      "nombreProducto": "Jugo",
-      "precio": "250",
-      "imagen": "https://mx.web.img3.acsta.net/pictures/19/03/24/07/45/2705868.png",
-      "categoria": "Bebida fria",
-      "id": 7
     }
   ],
   "usuario": [

@@ -1,18 +1,35 @@
+import { useEffect, useState } from "react";
 import { Button, Card, Col } from "react-bootstrap";
+import { consultaAPI } from "../../helpers/queires";
 
 const CardProducto = () => {
+  const [producto, setProducto] = useState([]);
+
+  useEffect(() => {
+    consultaAPI().then((respuesta) => {
+      setProducto(respuesta);
+    });
+  }, []);
+
   return (
-    <Col sm={12} md={4} lg={3} className="my-1">
-      <Card>
-        <Card.Body>
-        <Card.Img src="https://es.cravingsjournal.com/wp-content/uploads/2018/10/brownies-de-chocolate-5-500x375.jpg" alt="Brownie"/>
-        <Card.Title>Bownie</Card.Title>
-        <Card.Text>Precio $ 400</Card.Text>
-        <hr/>
-        <Button variant="danger">Ver más</Button>
-        </Card.Body>
-      </Card>
-    </Col>
+    <>
+      {producto.map((producto) => (
+        <Col sm={12} md={4} lg={3} className="my-1">
+          <Card key={producto.id}>
+            <Card.Body>
+              <Card.Img
+                src={producto.imagen}
+                alt={producto.nombreProducto}
+              />
+              <Card.Title>{producto.nombreProducto}</Card.Title>
+              <Card.Text>Precio $ {producto.precio}</Card.Text>
+              <hr />
+              <Button variant="danger">Ver más</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </>
   );
 };
 
