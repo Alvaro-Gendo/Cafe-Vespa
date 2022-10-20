@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Button, Card, Col } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { consultaAPI } from "../../helpers/queires";
 
 const CardProducto = () => {
@@ -24,7 +25,7 @@ const CardProducto = () => {
               <Card.Title>{producto.nombreProducto}</Card.Title>
               <Card.Text>Precio $ {producto.precio}</Card.Text>
               <hr />
-              <Button variant="danger">Ver más</Button>
+              <Link className="btn btn-outline-danger" to={`/detalle-producto/${producto.id}`}>Ver más</Link>
             </Card.Body>
           </Card>
         </Col>
