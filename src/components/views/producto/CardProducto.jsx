@@ -15,8 +15,8 @@ const CardProducto = () => {
   return (
     <>
       {producto.map((producto) => (
-        <Col sm={12} md={4} lg={3} className="my-1">
-          <Card key={producto._id}>
+        <Col sm={12} md={4} lg={3} className="my-1" key={producto._id}>
+          <Card>
             <Card.Body>
               <Card.Img
                 src={producto.imagen}
