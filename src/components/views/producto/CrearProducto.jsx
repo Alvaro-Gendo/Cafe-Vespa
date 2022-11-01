@@ -113,7 +113,7 @@ const CrearProducto = () => {
             required:"Debe seleccionar una categoria"
           })}>
             <option>Selecione una opcion</option>
-            <option value="Bebida Caliente">Bebida Caliente</option>
+            <option value="Bebida caliente">Bebida Caliente</option>
             <option value="Bebida fria">Bebida fria</option>
             <option value="Dulce">Dulce</option>
             <option value="Salado">Salado</option>
