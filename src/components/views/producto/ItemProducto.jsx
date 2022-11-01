@@ -18,7 +18,7 @@ const ItemProducto = ({producto, setProducto}) => {
     }).then((result) => {
       if (result.isConfirmed) {
         //realizar la consulta a la api
-        borrarProductoAPI(producto.id).then((respuesta)=>{
+        borrarProductoAPI(producto._id).then((respuesta)=>{
           if(respuesta.status === 200){
             // actualizar el state producto o la tabal
             consultaAPI().then((respuesta) =>{
@@ -45,13 +45,13 @@ const ItemProducto = ({producto, setProducto}) => {
 
  return (
     <tr>
-      <td>{producto.id}</td>
+      <td>{producto._id}</td>
       <td>{producto.nombreProducto}</td>
       <td>${producto.precio}</td>
       <td>{producto.imagen}</td>
       <td>{producto.categoria}</td>
       <td>
-        <Link className="btn btn-warning m-1" to={`/administrar/editar/${producto.id}`}>
+        <Link className="btn btn-warning m-1" to={`/administrar/editar/${producto._id}`}>
           Editar
         </Link>
         <Button variant="danger" className="m-1 text-black" onClick={borrarProducto}>
